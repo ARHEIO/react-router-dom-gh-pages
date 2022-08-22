@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes, Navigate } from "react-router-dom";
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Users = () => {
 
 export const App = () => (
   <>
-    <HashRouter basename='react-router-dom-gh-pages'>
+    <HashRouter>
       <nav>
         <ul>
           <li>
