@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 
 
 const Home = () => {
@@ -14,10 +14,9 @@ const Users = () => {
   return <h2>Users</h2>;
 }
 
-
 export const App = () => (
   <>
-    <BrowserRouter basename='react-router-dom-gh-pages'>
+    <HashRouter basename='react-router-dom-gh-pages'>
       <nav>
         <ul>
           <li>
@@ -39,6 +38,6 @@ export const App = () => (
           <Route path="/" element={<Home />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   </>
 );
