@@ -17,7 +17,7 @@ const Users = () => {
 
 export const App = () => (
   <>
-    <BrowserRouter>
+    <BrowserRouter basename='react-router-dom-gh-pages'>
       <nav>
         <ul>
           <li>
