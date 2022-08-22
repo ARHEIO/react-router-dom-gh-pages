@@ -20,7 +20,7 @@ export const App = () => (
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -35,7 +35,8 @@ export const App = () => (
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="*" element={<Navigate replace to="/home" />} />
         </Routes>
       </main>
     </HashRouter>
